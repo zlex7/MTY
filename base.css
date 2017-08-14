@@ -40,7 +40,7 @@ input {
 
 .col-sm-12 {
   padding: 0px;
-  background-color: #fff5f4; }
+  background-color: #fffcf9; }
 
 .buttons {
   width: 100%; }
@@ -107,7 +107,7 @@ input {
   padding: 15px;
   display: inline-block;
   width: 25%;
-  color: #fff5f4;
+  color: #fffcf9;
   padding-bottom: 8px;
   padding-top: 5px; }
 
@@ -214,7 +214,7 @@ input {
   width: 100%;
   height: 60px;
   font-size: 30px;
-  color: #fff5f4;
+  color: #fffcf9;
   padding: 25px;
   margin: auto;
   text-transform: uppercase;
@@ -249,7 +249,7 @@ input {
   text-decoration: none;
   font-size: 36px;
   font-weight: 500;
-  color: #fff5f4;
+  color: #fffcf9;
   padding: 0px;
   padding-bottom: 50px; }
 
@@ -282,7 +282,7 @@ input {
 #contact-row {
   background-color: #1a4f2a;
   background-image: url("images/binding-dark.png");
-  color: #fff5f4;
+  color: #fffcf9;
   text-align: center;
   padding-bottom: 40px;
   padding-top: 20px; }
@@ -296,11 +296,11 @@ input {
 #copyright-p {
   color: white;
   font-size: 14px;
-  color: #fff5f4; }
+  color: #fffcf9; }
 
 #contact-row a {
   font-size: 14px;
-  color: #fff5f4;
+  color: #fffcf9;
   text-decoration: underline; }
 
 #contact-row a:hover {
@@ -325,7 +325,7 @@ input {
 
 #home-popout {
   background: rgba(26, 79, 42, 0.75);
-  color: #fff5f4;
+  color: #fffcf9;
   text-shadow: 1px 1px #1a4f2a;
   width: 400px;
   margin-left: 50px;
@@ -416,9 +416,9 @@ input {
 
 #header-nav {
   width: 100%;
-  height: 95px;
+  height: 90px;
   z-index: 1;
-  background-color: #fff5f4; }
+  background-color: #fffcf9; }
 
 #tab-nav {
   display: flex;
@@ -435,19 +435,21 @@ input {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 125px;
+  width: 110px;
   height: 100%;
-  font-size: 20px;
+  font-size: 18px;
   color: #1a4f2a;
   margin-right: 5px;
-  transition: all 0.35s ease-in-out; }
+  transition: all 0.35s ease-in-out;
+  padding-right: 5px;
+  padding-left: 5px; }
 
 .tab-link:hover, .dropdown:hover, .dropdown:active, .tab-link:active, .dropdown:active, .tab-link:visited, .dropdown:visited {
   text-decoration: none; }
 
 .tab-link:hover, .dropdown:hover, .dropdown:active, .tab-link:active, .dropdown:active {
   background-color: rgba(26, 79, 42, 0.98);
-  color: #fff5f4;
+  color: #fffcf9;
   cursor: pointer; }
 
 .dropdown {
@@ -459,12 +461,12 @@ input {
 .dropdown-content {
   box-shadow: 0 5px 8px 0 rgba(11, 58, 132, 0.2), 0 3px 10px 0 rgba(11, 58, 132, 0.2);
   background-color: rgba(26, 79, 42, 0.75);
-  color: #fff5f4;
+  color: #fffcf9;
   overflow: hidden;
   position: absolute;
   top: 100%;
   left: 0;
-  width: 156.25px;
+  width: 137.5px;
   max-height: 0px;
   transition: all 0.35s ease-in-out;
   z-index: 1;
@@ -477,7 +479,7 @@ input {
   font-weight: 600;
   display: block;
   text-decoration: none;
-  color: #fff5f4;
+  color: #fffcf9;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 25px;
@@ -487,7 +489,7 @@ input {
   background-color: #1a4f2a; }
 
 #contact-tab {
-  background-color: #fff5f4;
+  background-color: #fffcf9;
   color: #2d5c9b;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -496,7 +498,7 @@ input {
 .active {
   background-color: #1a4f2a;
   background-image: url("images/binding-dark.png");
-  color: #fff5f4; }
+  color: #fffcf9; }
 
 #logo-nav {
   display: flex;
@@ -507,7 +509,7 @@ input {
 
 #logo {
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 20px;
   color: #1a4f2a;
   font-weight: 700;
@@ -532,7 +534,8 @@ input {
   padding-bottom: 50px; }
 
 #contact-info-div-2 {
-  margin-left: 90px; }
+  margin-left: 90px;
+  padding-bottom: 0px; }
 
 .contact-info-div h4 {
   display: inline;
@@ -541,5 +544,72 @@ input {
 
 .contact-title {
   font-size: 34px; }
+
+.faq-link {
+  text-decoration: underline;
+  color: #047706; }
+
+.faq-link:hover {
+  text-decoration: underline;
+  color: #047706;
+  font-weight: bold; }
+
+#faq-row {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+#faq-title {
+  padding-bottom: 50px; }
+
+#faq-p {
+  padding-bottom: 50px;
+  display: block;
+  width: 80%;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+  margin: auto; }
+
+#answer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  width: 80%;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+  margin: auto; }
+
+#question {
+  display: block;
+  width: 80%;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+  margin: auto;
+  color: #047706; }
+
+#retrieve-password-row {
+  padding: 75px; }
+
+.retrieve-password-form {
+  margin: 0px; }
+
+.retrieve-password-form input {
+  border: 1px solid #1a4f2a;
+  font-size: 18px; }
+
+.retrieve-password-form label {
+  font-size: 18px;
+  margin: 0px; }
+
+.form-container {
+  display: inline-block;
+  margin: auto;
+  margin-top: 50px; }
+
+.form-container p {
+  padding-bottom: 25px;
+  font-size: 16px; }
 
 /*# sourceMappingURL=base.css.map */
