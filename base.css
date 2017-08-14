@@ -62,11 +62,10 @@ input {
   vertical-align: center; }
 
 .section-title {
-  font-size: 30px;
+  font-size: 36px;
   color: black;
   padding-bottom: 20px;
-  padding-left: 20px;
-  text-decoration: underline; }
+  padding-left: 20px; }
 
 .home-p {
   font-size: 20px; }
@@ -134,7 +133,7 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 1;
   background-repeat: no-repeat;
   background-size: cover;
   animation-name: fadeIn;
@@ -143,7 +142,7 @@ input {
   animation-delay: 0s;
   animation-duration: 1s;
   animation-fill-mode: both;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://drive.google.com/file/d/0BwR6z_XC1lFacUQyb1hNNHVzMUE/view?usp=sharing"); }
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/students.jpg"); }
 
 @keyframes fadeIn {
   0% {
@@ -277,7 +276,8 @@ input {
 #classes-row {
   text-align: center;
   padding: 20px;
-  padding-bottom: 75px; }
+  padding-bottom: 75px;
+  padding-top: 75px; }
 
 #contact-row {
   background-color: #1a4f2a;
@@ -339,7 +339,6 @@ input {
   font-size: 18px; }
 
 #what-is-div {
-  display: none;
   padding-top: 75px;
   padding-bottom: 75px; }
 
@@ -432,7 +431,6 @@ input {
   padding-right: 4%; }
 
 .tab-link, .dropdown {
-  font-weight: 600;
   text-align: center;
   display: inline-flex;
   align-items: center;
@@ -455,7 +453,7 @@ input {
 .dropdown {
   position: relative; }
 
-.dropdown h4 {
+.dropdown h4, .tab-link h4, .dropdown h4 {
   font-weight: bold; }
 
 .dropdown-content {
@@ -520,5 +518,28 @@ input {
   padding-left: 5px;
   margin: 0px;
   font-weight: 900; }
+
+#contact-info-row {
+  padding: 75px; }
+
+.contact-info-div {
+  color: black;
+  display: inline-block;
+  margin-left: -50px;
+  text-align: left;
+  font-size: 20px;
+  padding: 25px;
+  padding-bottom: 50px; }
+
+#contact-info-div-2 {
+  margin-left: 90px; }
+
+.contact-info-div h4 {
+  display: inline;
+  font-size: 22px;
+  text-decoration: underline; }
+
+.contact-title {
+  font-size: 34px; }
 
 /*# sourceMappingURL=base.css.map */

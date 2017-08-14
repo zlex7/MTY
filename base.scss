@@ -1,9 +1,12 @@
 $dark-green : #1a4f2a;
 $lighter-dark-green: #047706;
+$dark-green-transparent : rgba(26, 79, 42,0.75);
+$dark-blue-transparent: rgba(1,40,104,0.75);
 $off-white : #fff5f4;
 $blue : #2369db;
 $orange : #e88e00;//#936000;
 $purple: #7a086d;
+$dark-blue: #012868;
 
 $tab-link-width : 125px;
 
@@ -106,11 +109,10 @@ input{
 
 .section-title{
 
-  font-size:30px;
+  font-size:36px;
   color: black;
   padding-bottom:20px;
   padding-left:20px;
-  text-decoration: underline;
 
 
 }
@@ -210,10 +212,11 @@ input{
    left:0;
    width:100%;
    height:100%;
-   opacity: 0;
+   opacity: 1;
 
    background-repeat: no-repeat;
    background-size: cover;
+
    animation-name: fadeIn;
    animation-iteration-count: 1;
    animation-timing-function: ease-in-out;
@@ -221,7 +224,7 @@ input{
    animation-duration: 1s;
    animation-fill-mode:both;
 
-   background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),url("https://drive.google.com/file/d/0BwR6z_XC1lFacUQyb1hNNHVzMUE/view?usp=sharing");
+   background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),url("images/students.jpg");
  }
 
  @keyframes fadeIn {
@@ -332,7 +335,7 @@ input{
   padding: 25px;
   margin: auto;
   text-transform: uppercase;
-  background-color: rgba(26, 79, 42,0.75);
+  background-color: $dark-green-transparent;
 //background-color: $dark-green;
 }
 
@@ -428,6 +431,7 @@ input{
   text-align: center;
   padding: 20px;
   padding-bottom: 75px;
+  padding-top: 75px;
 }
 
 #classes-title{
@@ -504,7 +508,7 @@ input{
 
 #home-popout{
 
-  background: rgba(26, 79, 42,0.75);
+  background: $dark-green-transparent;
   color:$off-white;
   text-shadow: 1px 1px $dark-green;
   width:400px;
@@ -528,7 +532,6 @@ input{
 
 #what-is-div{
 
-  display: none;
   padding-top:75px;
   padding-bottom:75px;
 }
@@ -676,7 +679,6 @@ input{
 
 .tab-link{
 
-  font-weight: 600;
   text-align: center;
   display: inline-flex;
   align-items: center;
@@ -703,7 +705,7 @@ input{
 .tab-link:hover,.tab-link:active,{
 
 
-  background-color:rgba(26, 79, 42,0.98);
+  background-color:rgba(26,79,42,0.98);
   color: $off-white;
   cursor: pointer;
 
@@ -721,7 +723,7 @@ input{
 
 }
 
-.dropdown h4{
+.dropdown h4,.tab-link h4{
 
   font-weight:bold;
 }
@@ -729,7 +731,7 @@ input{
 .dropdown-content{
 
   box-shadow:0 5px 8px 0 rgba(11, 58, 132,0.2),0 3px 10px 0 rgba(11, 58, 132,0.2);
-  background-color: rgba(26, 79, 42,0.75);
+  background-color: $dark-green-transparent;
   color: $off-white;
   overflow:hidden;
   position: absolute;
@@ -764,7 +766,7 @@ input{
 
 .dropdown-content a:hover {
 
-  background-color: rgba(26, 79, 42,1);
+  background-color: $dark-green;
 
 }
 
@@ -781,7 +783,7 @@ input{
 
 .active{
 
-  background-color:rgba(26, 79, 42,1);
+  background-color: $dark-green;
   background-image: url("images/binding-dark.png");
   color: $off-white;
 
@@ -816,4 +818,38 @@ input{
   padding-left:5px;
 	margin:0px;
   font-weight:900;
+}
+
+#contact-info-row{
+
+	padding:75px;
+}
+
+.contact-info-div{
+
+	color: black;
+	display: inline-block;
+	margin-left:-50px;
+	text-align: left;
+	font-size: 20px;
+	padding:25px;
+	padding-bottom:50px;
+
+}
+
+#contact-info-div-2{
+
+	margin-left:90px;
+}
+
+.contact-info-div h4{
+
+	display: inline;
+	font-size: 22px;
+	text-decoration: underline;
+}
+
+.contact-title{
+
+	font-size:34px;
 }
