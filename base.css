@@ -258,6 +258,11 @@ input {
   padding-top: 75px;
   padding-bottom: 75px; }
 
+#about-row-2 {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 75px; }
+
 #about-title, #classes-title {
   padding: 0px;
   padding-bottom: 50px;
@@ -611,5 +616,23 @@ input {
 .form-container p {
   padding-bottom: 25px;
   font-size: 16px; }
+
+#classes-desc-row {
+  padding: 50px;
+  text-align: center; }
+
+.classes-table {
+  display: table;
+  margin: 0 auto;
+  margin-top: 25px; }
+
+.classes-table caption {
+  font-size: 22px;
+  text-align: center;
+  color: black;
+  text-decoration: underline; }
+
+.classes-table td, th {
+  padding: 10px; }
 
 /*# sourceMappingURL=base.css.map */
