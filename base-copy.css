@@ -455,7 +455,7 @@ input {
 .dropdown {
   position: relative; }
 
-.dropdown h4, .tab-link h4, .dropdown h4 {
+.dropdown h4, .tab-link h4 {
   font-weight: bold; }
 
 .dropdown-content {
@@ -554,14 +554,14 @@ input {
   color: #047706;
   font-weight: bold; }
 
-#faq-row {
+#faq-row, #online-row, #description-row {
   padding-top: 75px;
   padding-bottom: 75px; }
 
-#faq-title {
+#faq-title, #online-title, #description-title {
   padding-bottom: 50px; }
 
-#faq-p {
+#faq-p, #online-p, #description-p {
   padding-bottom: 50px;
   display: block;
   width: 80%;
@@ -580,7 +580,7 @@ input {
   color: black;
   margin: auto; }
 
-#question {
+#question, .course-name {
   display: block;
   width: 80%;
   font-weight: 500;
@@ -611,5 +611,16 @@ input {
 .form-container p {
   padding-bottom: 25px;
   font-size: 16px; }
+
+.course-descrip {
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  width: 80%;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+  margin: auto; }
 
 /*# sourceMappingURL=base.css.map */
