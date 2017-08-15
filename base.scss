@@ -706,12 +706,12 @@ input{
   text-decoration: none;
 }
 
-.tab-link:hover,.tab-link:active,{
+.tab-link:hover,.tab-link:active{
 
-
-  background-color:rgba(26,79,42,0.98);
+	background-color:rgba(26,79,42,0.98);
   color: $off-white;
   cursor: pointer;
+
 
 }
 
@@ -719,6 +719,15 @@ input{
 
   @extend .tab-link;
   position: relative;
+}
+
+.dropdown a{
+	width:100%;
+	height:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
 }
 
 .dropdown:hover,.dropdown:active{
@@ -730,6 +739,7 @@ input{
 .dropdown h4,.tab-link h4{
 
 	font-weight: bold;
+	font-size:17px;
 }
 
 .dropdown-content{
@@ -873,7 +883,7 @@ input{
 	font-weight: bold;
 }
 
-#faq-row{
+#faq-row, #online-row, #description-row {
 
 	padding-top:75px;
 	padding-bottom:75px;
@@ -883,7 +893,7 @@ input{
 
 	padding-bottom:50px;
 }
-#faq-p {
+#faq-p,, #online-p, #description-p  {
   padding-bottom:50px;
   display: block;
   width: 80%;
@@ -891,6 +901,11 @@ input{
   font-size: 22px;
   color: black;
   margin: auto; }
+
+	#description-p{
+
+		padding-top:25px;
+	}
 
 #answer {
   padding-top:25px;
@@ -902,7 +917,10 @@ input{
   color: black;
   margin: auto; }
 
-#question {
+.course-name{
+	text-decoration: underline;
+}
+#question, .course-name {
   display: block;
   width: 80%;
   font-weight: 500;
@@ -966,13 +984,57 @@ input{
 
 .classes-table caption{
 
-	font-size:22px;
 	text-align: center;
 	color:black;
-	text-decoration: underline;
+	padding-bottom:25px;
+	margin-top:10px;
 }
 
+.table-title{
+	display:block;
+	font-size:22px;
+		text-decoration: underline;
+}
+
+.table-subtitle{
+	display:block;
+	font-size:18px;
+	margin-top:15px;
+}
+
+.classes-table tr{
+
+}
 .classes-table td,th{
 
 	padding:10px;
+	max-width:250px;
+	border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td{
+
+	border-bottom-width: 0px;
+}
+.classes-table a{
+
+	color: $lighter-dark-green;
+
+}
+
+.classes-table a:hover{
+
+	text-decoration: underline;
+}
+
+.course-descrip {
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  width: 80%;
+  font-weight: 500;
+  font-size: 22px;
+  color: black;
+  margin: auto;
 }

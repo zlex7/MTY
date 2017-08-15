@@ -258,11 +258,6 @@ input {
   padding-top: 75px;
   padding-bottom: 75px; }
 
-#about-row-2 {
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 75px; }
-
 #about-title, #classes-title {
   padding: 0px;
   padding-bottom: 50px;
@@ -460,17 +455,8 @@ input {
 .dropdown {
   position: relative; }
 
-.dropdown a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: inherit; }
-
-.dropdown h4, .tab-link h4, .dropdown h4 {
-  font-weight: bold;
-  font-size: 17px; }
+.dropdown h4, .tab-link h4 {
+  font-weight: bold; }
 
 .dropdown-content {
   box-shadow: 0 5px 8px 0 rgba(11, 58, 132, 0.2), 0 3px 10px 0 rgba(11, 58, 132, 0.2);
@@ -572,7 +558,7 @@ input {
   padding-top: 75px;
   padding-bottom: 75px; }
 
-#faq-title {
+#faq-title, #online-title, #description-title {
   padding-bottom: 50px; }
 
 #faq-p, #online-p, #description-p {
@@ -584,9 +570,6 @@ input {
   color: black;
   margin: auto; }
 
-#description-p {
-  padding-top: 25px; }
-
 #answer {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -596,9 +579,6 @@ input {
   font-size: 22px;
   color: black;
   margin: auto; }
-
-.course-name {
-  text-decoration: underline; }
 
 #question, .course-name {
   display: block;
@@ -631,45 +611,6 @@ input {
 .form-container p {
   padding-bottom: 25px;
   font-size: 16px; }
-
-#classes-desc-row {
-  padding: 50px;
-  text-align: center; }
-
-.classes-table {
-  display: table;
-  margin: 0 auto;
-  margin-top: 25px; }
-
-.classes-table caption {
-  text-align: center;
-  color: black;
-  padding-bottom: 25px;
-  margin-top: 10px; }
-
-.table-title {
-  display: block;
-  font-size: 22px;
-  text-decoration: underline; }
-
-.table-subtitle {
-  display: block;
-  font-size: 18px;
-  margin-top: 15px; }
-
-.classes-table td, th {
-  padding: 10px;
-  max-width: 250px;
-  border-bottom: 1px solid #ddd; }
-
-tr:last-child td {
-  border-bottom-width: 0px; }
-
-.classes-table a {
-  color: #047706; }
-
-.classes-table a:hover {
-  text-decoration: underline; }
 
 .course-descrip {
   padding-left: 50px;
