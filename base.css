@@ -263,25 +263,30 @@ input {
 
 #about-row-2 {
   text-align: center;
-  padding-top: 75px;
-  padding-bottom: 75px; }
+  padding-top: 75px; }
 
 .about-row-3 {
   padding: 25px;
-  font-size: 20px;
   padding-top: 75px;
   padding-bottom: 75px;
   vertical-align: top; }
 
 .about-row-3 p {
+  font-size: 20px;
   text-align: center;
   margin-top: 25px; }
 
 .about-p-container {
   display: inline-block;
-  width: 75%;
-  padding-left: 50px;
+  width: 60%;
+  max-width: 1000px;
+  margin-top: 50px;
+  padding-left: 25px;
   padding-right: 50px; }
+
+#about-whitespace {
+  width: 10%;
+  display: inline-block; }
 
 .about-container {
   display: inline-block;
@@ -289,19 +294,27 @@ input {
 
 .portrait-img-container {
   display: inline-block;
-  width: 25%;
-  min-width: 150px;
-  vertical-align: top;
-  padding: 25px;
-  padding-top: 10px; }
+  width: 30%;
+  vertical-align: top; }
 
 .portrait-img {
-  height: 200px;
+  width: 250px;
+  height: 300px;
   object-fit: cover;
   object-position: center center;
   box-shadow: 0 5px 8px 0 rgba(11, 58, 132, 0.2), 0 3px 10px 0 rgba(11, 58, 132, 0.2);
-  margin-left: 25%;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 20px; }
+
+.about-row-4 {
+  padding-bottom: 50px; }
+
+.about-row-4 p {
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px; }
 
 .small-section-title {
   text-align: center;
@@ -512,8 +525,8 @@ input {
   color: inherit; }
 
 .dropdown h4, .tab-link h4, .dropdown h4 {
-  font-weight: 500;
-  font-size: 17px; }
+  font-weight: 600;
+  font-size: 18px; }
 
 .dropdown-content {
   box-shadow: 0 5px 8px 0 rgba(11, 58, 132, 0.2), 0 3px 10px 0 rgba(11, 58, 132, 0.2);
@@ -609,7 +622,7 @@ input {
 .faq-link:hover {
   text-decoration: underline;
   color: #047706;
-  font-weight: bold; }
+  text-shadow: 0px 0px 1px #047706; }
 
 #faq-row, #online-row, #description-row {
   padding-top: 75px;
@@ -658,16 +671,33 @@ input {
 
 .retrieve-password-form input {
   border: 1px solid #1a4f2a;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 10px;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .retrieve-password-form label {
   font-size: 18px;
   margin: 0px;
-  font-weight: 500; }
+  font-weight: 500;
+  width: 100px;
+  padding: 10px; }
+
+#login-row {
+  padding: 25px;
+  padding-top: 75px;
+  padding-bottom: 75px; }
 
 #submit {
   font-weight: 500;
-  font-size: 18px; }
+  font-size: 18px;
+  border: 1px solid #1a4f2a;
+  color: #1a4f2a;
+  margin: 10px;
+  margin-left: 35px;
+  margin-top: 25px;
+  /*	box-shadow:0 1px 2px 0 rgba(11, 58, 132,0.2),0 1px 2px 0 rgba(11, 58, 132,0.2);
+  */ }
 
 .form-container {
   display: inline-block;
@@ -705,7 +735,9 @@ input {
 .table-subtitle {
   display: block;
   font-size: 18px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px; }
 
 .classes-table td, th {
   padding: 10px;
