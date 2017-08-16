@@ -1,14 +1,16 @@
+@import "https://cdn.rawgit.com/h-ibaldo/Raleway_Fixed_Numerals/master/css/rawline.css";
 html, body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  font-family: "Raleway","Helvetica Neue","Open Sans";
+  font-family: "rawline","Helvetica Neue","Open Sans";
   background-color: white; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0px; }
+  margin: 0px;
+  font-weight: 400; }
 
 a, a:hover, a:active, a:visited, a:focus {
   text-decoration: none;
@@ -38,7 +40,7 @@ input {
 .col-sm-2 {
   padding: 0px; }
 
-.col-sm-12 {
+.col-sm-12, .col-sm-6 {
   padding: 0px;
   background-color: #fffcf9; }
 
@@ -65,7 +67,8 @@ input {
   font-size: 36px;
   color: black;
   padding-bottom: 20px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  font-weight: 400; }
 
 .home-p {
   font-size: 20px; }
@@ -248,7 +251,7 @@ input {
   font-family: "Raleway";
   text-decoration: none;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fffcf9;
   padding: 0px;
   padding-bottom: 50px; }
@@ -260,8 +263,49 @@ input {
 
 #about-row-2 {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 75px;
   padding-bottom: 75px; }
+
+.about-row-3 {
+  padding: 25px;
+  font-size: 20px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  vertical-align: top; }
+
+.about-row-3 p {
+  text-align: center;
+  margin-top: 25px; }
+
+.about-p-container {
+  display: inline-block;
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.about-container {
+  display: inline-block;
+  margin: auto; }
+
+.portrait-img-container {
+  display: inline-block;
+  width: 25%;
+  min-width: 150px;
+  vertical-align: top;
+  padding: 25px;
+  padding-top: 10px; }
+
+.portrait-img {
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+  box-shadow: 0 5px 8px 0 rgba(11, 58, 132, 0.2), 0 3px 10px 0 rgba(11, 58, 132, 0.2);
+  margin-left: 25%;
+  display: inline-block; }
+
+.small-section-title {
+  text-align: center;
+  font-size: 26px; }
 
 #about-title, #classes-title {
   padding: 0px;
@@ -273,7 +317,6 @@ input {
 #about-p {
   display: block;
   width: 80%;
-  font-weight: 500;
   font-size: 22px;
   color: black;
   margin: auto; }
@@ -318,7 +361,7 @@ input {
   padding: 12px;
   border: 2px solid white;
   border-radius: 3px;
-  font-weight: bold;
+  font-weight: 600;
   transition: all .3s linear; }
 
 #apply-link:hover {
@@ -412,7 +455,7 @@ input {
   color: #047706;
   display: block;
   padding: 5px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px; }
 
 #login-link:hover, #sign-up-link:hover {
@@ -469,7 +512,7 @@ input {
   color: inherit; }
 
 .dropdown h4, .tab-link h4, .dropdown h4 {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 17px; }
 
 .dropdown-content {
@@ -533,7 +576,7 @@ input {
 #logo-text {
   padding-left: 5px;
   margin: 0px;
-  font-weight: 900; }
+  font-weight: 500; }
 
 #contact-info-row {
   padding: 75px; }
@@ -579,7 +622,7 @@ input {
   padding-bottom: 50px;
   display: block;
   width: 80%;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   color: black;
   margin: auto; }
@@ -587,12 +630,11 @@ input {
 #description-p {
   padding-top: 25px; }
 
-#answer {
+.answer {
   padding-top: 25px;
   padding-bottom: 25px;
   display: block;
   width: 80%;
-  font-weight: 500;
   font-size: 22px;
   color: black;
   margin: auto; }
@@ -600,10 +642,9 @@ input {
 .course-name {
   text-decoration: underline; }
 
-#question, .course-name {
+.question, .course-name {
   display: block;
   width: 80%;
-  font-weight: 500;
   font-size: 22px;
   color: black;
   margin: auto;
@@ -621,7 +662,12 @@ input {
 
 .retrieve-password-form label {
   font-size: 18px;
-  margin: 0px; }
+  margin: 0px;
+  font-weight: 500; }
+
+#submit {
+  font-weight: 500;
+  font-size: 18px; }
 
 .form-container {
   display: inline-block;
@@ -630,22 +676,26 @@ input {
 
 .form-container p {
   padding-bottom: 25px;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 500; }
 
 #classes-desc-row {
   padding: 50px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 75px; }
 
 .classes-table {
   display: table;
   margin: 0 auto;
-  margin-top: 25px; }
+  margin-top: 25px;
+  font-weight: 500; }
 
 .classes-table caption {
   text-align: center;
   color: black;
   padding-bottom: 25px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 20px; }
 
 .table-title {
   display: block;
@@ -677,7 +727,6 @@ tr:last-child td {
   padding-bottom: 25px;
   display: block;
   width: 80%;
-  font-weight: 500;
   font-size: 22px;
   color: black;
   margin: auto; }
