@@ -199,7 +199,7 @@ input{
   display: block;
   text-align: right;
   font-size:20px;
-  font-weight: bold;
+  font-weight: 600;
 
 }
 
@@ -221,7 +221,7 @@ input{
    animation-iteration-count: 1;
    animation-timing-function: ease-in-out;
    animation-delay:0s;
-   animation-duration: 1s;
+   animation-duration: .75s;
    animation-fill-mode:both;
 
    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),url("images/students.jpg");
@@ -458,7 +458,9 @@ input{
 	height:300px;
 	object-fit: cover;
 	object-position: center center;
-	box-shadow:0 5px 8px 0 rgba(11, 58, 132,0.2),0 3px 10px 0 rgba(11, 58, 132,0.2);
+	/*box-shadow:0 5px 8px 0 rgba(11, 58, 132,0.2),0 3px 10px 0 rgba(11, 58, 132,0.2);
+	*/
+	border: 5px double $dark-green;
 	display:inline-block;
 	margin-left:20px;
 }
@@ -470,12 +472,12 @@ input{
 
 .about-row-4 p{
 
-	width: 80%;
+	width: 65%;
 	font-size:20px;
 	text-align: center;
 	margin: auto;
 	margin-top: 25px;
-
+	padding-bottom:75px;
 }
 
 .small-section-title{
@@ -502,6 +504,20 @@ input{
   color:black;
   margin:auto;
 
+}
+
+#online-p{
+
+	width:100%;
+	padding-top:25px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#online-title-2{
+
+	padding-bottom:75px;
 }
 
 #classes-row{
@@ -534,7 +550,7 @@ input{
   margin:0px;
   padding:20px;
   font-size: 18px;
-  font-weight:bold;
+  font-weight:500;
 }
 
 #copyright-p{
@@ -560,7 +576,7 @@ input{
 #apply-link{
 
   float:right;
-  color:white;
+	  color:white;
   font-size: 18px;
   padding:12px;
   border: 2px solid white;
@@ -737,9 +753,13 @@ input{
 
    width:100%;
    height:90px;
-   z-index: 1;
+   z-index: 2;
    background-color: $off-white;
-
+	 /*border-bottom-width:5px;
+	 border-bottom-color: $dark-green;
+	 border-bottom-style: double;
+	 box-shadow:0 5px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.2);
+*/
 }
 
 #tab-nav{
@@ -764,9 +784,8 @@ input{
   width:$tab-link-width;
   height:100%;
   font-size: 18px;
-  color:$dark-green;
+  color: $dark-green;
   margin-right:5px;
-  transition: $dropdown-transition;
 	padding-right:5px;
 	padding-left:5px;
   //transition-property: background-image;
@@ -814,7 +833,7 @@ input{
 
 .dropdown h4,.tab-link h4{
 
-	font-weight: 600;
+	font-weight: 500;
 	font-size:18px;
 
 }
@@ -830,7 +849,7 @@ input{
   left:0;
   width:$tab-link-width*1.25;
   max-height:0px;
-  transition: $dropdown-transition;
+  transition: all .2s linear;
   z-index:1;
   text-align: left;
 
@@ -938,7 +957,7 @@ input{
 
 	display: inline;
 	font-size: 22px;
-	text-decoration: underline;
+	font-weight: 500;
 }
 
 .contact-title{
@@ -969,7 +988,7 @@ input{
 
 	padding-bottom:50px;
 }
-#faq-p,, #online-p, #description-p  {
+#faq-p,#description-p  {
   padding-bottom:50px;
   display: block;
   width: 80%;
@@ -994,6 +1013,7 @@ input{
 
 .course-name{
 	text-decoration: underline;
+	text-align: left;
 }
 .question, .course-name {
   display: block;
@@ -1013,7 +1033,14 @@ input{
 .retrieve-password-form{
 
 	margin:0px;
+	text-align: right;
+	display:inline-block;
+	margin: auto;
+}
 
+#register-password-form{
+
+	padding-right:100px;
 }
 
 .retrieve-password-form input{
@@ -1023,6 +1050,7 @@ input{
 	margin:10px;
 	padding-left:5px;
 	padding-right:5px;
+	vertical-align: top;
 }
 
 .retrieve-password-form label{
@@ -1030,31 +1058,47 @@ input{
 	font-size: 18px;
 	margin:0px;
 	font-weight:500;
-	width:100px;
 	padding:10px;
+	vertical-align: text-top;
 }
 
 #login-row{
 
 	padding:25px;
-	padding-top:75px;
-	padding-bottom:75px;
+	padding-top:50px;
+	padding-bottom:50px;
 }
 .login-submit{
 
+}
+#submit-container{
 
+	margin-left:30px;
+	margin-top:25px;
+}
+
+#submit-container-2{
+
+	margin-left:140px;
+	margin-top:25px;
 }
 
 #submit{
 
+	display: block;
+	margin:auto;
 	font-weight: 500;
-	font-size:18px;
-	border:1px solid $dark-green;
-	color: $dark-green;
-	margin:10px;
-	margin-left:35px;
-	margin-top:25px;
-/*	box-shadow:0 1px 2px 0 rgba(11, 58, 132,0.2),0 1px 2px 0 rgba(11, 58, 132,0.2);
+	font-size:20px;
+	margin-top:15px;
+
+	/*
+	background-color: $lighter-dark-green;
+	color: white;
+	border-width: 0px;
+	padding:5px;
+	padding-left:10px;
+	padding-right: 10px;
+box-shadow:0 1px 2px 0 rgba(11, 58, 132,0.2),0 1px 2px 0 rgba(11, 58, 132,0.2);
 */
 }
 
@@ -1063,7 +1107,7 @@ input{
 
 	display:inline-block;
 	margin:auto;
-	margin-top:50px;
+	margin-top:30px;
 }
 
 .form-container p{
@@ -1122,6 +1166,23 @@ input{
 	border-bottom: 1px solid #ddd;
 }
 
+.faq-table caption{
+
+	margin-bottom:10px;
+}
+
+.faq-table td,th{
+
+	max-width: 500px;
+}
+
+
+.faq-table{
+
+	font-size:20px;
+	margin-top:25px;
+	margin-bottom: 25px;
+}
 tr:last-child td{
 
 	border-bottom-width: 0px;
@@ -1146,4 +1207,47 @@ tr:last-child td{
   font-size: 22px;
   color: black;
   margin: auto;
+	text-align: left;
+}
+
+#staff-row{
+
+	padding-top:75px;
+	padding-bottom:75px;
+
+}
+
+.staff-container{
+
+	width:80%;
+	margin:auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom:50px;
+}
+
+.staff-container img{
+
+	display:inline-block;
+	width:200px;
+	height:200px;
+	border: 5px solid $dark-green;
+}
+.staff-desc{
+
+	width:700px;
+	font-size:18px;
+	display: inline-block;
+	text-align: left;
+	margin-left:50px;
+}
+
+.staff-desc h4{
+
+	text-align: left;
+	padding-bottom:15px;
+	padding-top:15px;
+	font-size:22px;
+	text-decoration: underline;
 }

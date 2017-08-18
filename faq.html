@@ -21,23 +21,23 @@
 
   <body>
 
-  	    <div class = "container-fluid">
+    <div class = "container-fluid">
 
-		    <div class = "row">
+        <div class = "row">
 
-    			<div class="col-sm-12">
+          <div class="col-sm-12">
 
             <div id = "header-nav">
 
-    		            <div id="tab-nav">
+                    <div id="tab-nav">
 
-    		              <a id="logo" href="index.html"><h1 id="logo-text">MTY Academy</h1></a>
+                      <a id="logo" href="index.html"><h1 id="logo-text">MTY Academy</h1></a>
 
-    		              <a class="tab-link" href="index.html"><h4>Home</h4></a>
+                      <a class="tab-link" href="index.html"><h4>Home</h4></a>
 
                       <div class="dropdown">
 
-      		              <h4>Classes</h4>
+                        <a href="class-descriptions.html"><h4>Classes</h4></a>
 
                         <div class="dropdown-content">
 
@@ -53,7 +53,7 @@
 
                       <div class="dropdown">
 
-      		              <h4>About Us</h4>
+                        <a href="about.html"><h4>About Us</h4></a>
 
                         <div class="dropdown-content">
 
@@ -66,12 +66,13 @@
 
                       <div class="dropdown">
 
-      		              <h4>Help</h4>
+                        <a href="contact.html"><h4>Help</h4></a>
 
                         <div class="dropdown-content">
 
                           <a href="faq.html">FAQ</a>
                           <a href="contact.html">Contact Us</a>
+                          <a href="retrieve_password.html">Retrieve Password</a>
 
                         </div>
 
@@ -79,23 +80,23 @@
 
                       <div id="login-div">
 
-                        <a id="login-link">Login</a>
+                        <a id="login-link" href="login.html">Login</a>
 
-                        <a id="sign-up-link">Register</a>
+                        <a id="sign-up-link" href="register.html">Register</a>
 
                       </div>
 
 
 
-    		            </div>
+                    </div>
 
-    		         </div>
+                 </div>
 
-    			  </div>
+            </div>
 
-  		    </div>
+          </div>
 
-	    </div>
+      </div>
 
 
 	    <div class="container-fluid">
@@ -104,7 +105,7 @@
 
                 <div class="col-sm-12" id="faq-row">
 
-                	<h1 id="faq-title" class="section-title text-center"> Frequently Asked Questions </h1>
+                	<h1 id="faq-title" class="section-title text-center"> Frequently asked questions </h1>
 
                 	<p id="faq-p">
 
@@ -209,7 +210,31 @@
 
                 		A: Payments are refundable or partially refundable depending on the time a withdrawal email is received by MTY Academy. Apart from the first class, the refund amounts are 3/4, 1/2, 1/4, or none of the class fee paid if the withdraw request is received during the first, second, third, or last quarter of the class. More precisely, it is calculated according to the following table: <br> <br>
 
-                		TABLE HERE <br> <br>
+                    <table class="classes-table faq-table">
+
+                      <caption>
+                        <span class="table-title">Refund Table</span>
+                      </caption>
+
+                    <tbody class="classes-table-body">
+
+                      <tr><th>Date withdraw request email is received</th><th>Refund Amount</th></tr>
+              <tr><td>Fewer than 1/4 of classes is left to cover</td><td> $0</td></tr>
+              <tr><td>More than 1/4 of classes is left to cover<br>
+                      but fewer that 1/2 of classes is left to cover</td><td> 1/4 of the class fee</td></tr>
+              <tr><td>More than 1/2 of classes is left to cover<br>
+                      but fewer that 3/4 of classes is left to cover</td><td> 1/2 of the class fee</td></tr>
+              <tr><td>More than 3/4 of classes is left to cover<br>
+                      but after the second day of class</td><td> 3/4 of the class fee</td></tr>
+              <tr><td>
+              Before the second day of class<br>
+              but after the refund-cut-off date<sup>*</sup><br> </td><td>Proportional to lectures</td></tr>
+
+              <tr><td>Before the refund-cut-off date</td><td>$15</td></tr>
+
+              </tbody>
+
+                </table
 
                 		The refund cut-off date is one week (7 days) before the first class.
 
@@ -237,7 +262,22 @@
 
                 		A: You can view your class registration status and your payment status at any time by clicking on the “Registration Status” tab on the “My Account” page. The following are possible cases for your registration and payment status: <br><br>
 
-                		TABLE HERE
+                    <table class="classes-table faq-table">
+
+                      <caption>
+                        <span class="table-title">Registration Statuses</span>
+                      </caption>
+
+<tbody><tr><th>Registration Status</th><th>Payment Status</th><th>Remark</th></tr>
+<tr><td>Pending Approval</td><td>Unknown</td>
+<td>Class registration needs approval. An email notice will be send to you when it gets approved or rejected.</td></tr>
+<tr><td>Approved</td><td>Payment Due</td>
+<td>Registration is approved. To complete registration: click <a href="">"My Account|Payment Form" tab</a> to print out payment form and send it with your check.</td></tr>
+<tr><td>Approved</td><td>No Balance Due</td>
+<td>Registration is complete. The required class fees has been received and processed.</td></tr>
+<tr><td>Approved</td><td>Balance Due</td>
+<td>Registration is approved. An partial class fees has been received and procesed. such as,  due to late joining class. case is handled indivially.</td></tr>
+</tbody></table>
 
                 	</p>
 
