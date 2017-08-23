@@ -73,7 +73,7 @@
                         <div class="dropdown-content">
 
                           <a href="faq.html">FAQ</a>
-                          <a href="contact.html">Contact Us</a>
+                          <a href="contact.html">Contact</a>
                           <a href="retrieve_password.html">Retrieve Password</a>
 
                         </div>
@@ -106,7 +106,7 @@
 
       			<div class="col-sm-12 text-center" id="login-row">
 
-              <h1 class="section-title"> Login </h1>
+              <h1 class="section-title" id="login-title"> Login </h1>
 
               <div class="form-container">
 
@@ -118,23 +118,23 @@
 
                </p>
 
-                <form class="retrieve-password-form" action="" method="post">
+               <form class="login-form">
+                 <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                   <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                 </div>
+                 <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                   <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                 </div>
+                 <div class="input-group">
 
-                  <label for="username">Username: </label>
-                  <input id="username" name="username" type="email" required>
+                  <div class="input-group-btn">
+                    <input type="submit" class="btn btn-success btn-send" value="Submit">
+                  </div>
 
-                  <br>
-
-                  <label for="password">Password: </label>
-                  <input id="password" name="password" type="password" required>
-
-                  <br>
-
-                  <div id="submit-container">
-                  <input id="submit" class="login-submit" type="submit">
-                </div>
-
-                </form>
+                 </div>
+               </form>
 
 
             </div>

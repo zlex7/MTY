@@ -7,9 +7,8 @@ html, body {
   overflow-x: hidden;
   font-family: "rawline","Helvetica Neue","Open Sans";
   background-color: white;
-  overflow:auto;
-  overflow:initial;
- }
+  overflow: auto;
+  overflow: initial; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
@@ -521,7 +520,7 @@ input {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
+  width: 100px;
   height: 100%;
   font-size: 18px;
   color: #1a4f2a;
@@ -560,7 +559,7 @@ input {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 137.5px;
+  width: 125px;
   max-height: 0px;
   transition: all .2s linear;
   z-index: 1;
@@ -633,8 +632,7 @@ input {
 
 .contact-info-div h4 {
   display: inline;
-  font-size: 22px;
-  font-weight: 500; }
+  font-size: 22px; }
 
 .contact-title {
   font-size: 34px; }
@@ -676,9 +674,18 @@ input {
   color: black;
   margin: auto; }
 
+.answer-2 {
+  padding-top: 10	px;
+  padding-bottom: 10px;
+  display: block;
+  font-size: 20px;
+  color: black;
+  margin: 0px; }
+
 .course-name {
   text-decoration: underline;
-  text-align: left; }
+  text-align: left;
+  font-weight: 500; }
 
 .question, .course-name {
   display: block;
@@ -687,6 +694,14 @@ input {
   color: black;
   margin: auto;
   color: #047706; }
+
+.question-2 {
+  margin: 0px;
+  font-size: 22px;
+  display: block;
+  color: #047706;
+  padding-top: 25px;
+  padding-bottom: 25px; }
 
 #retrieve-password-row {
   padding: 75px; }
@@ -756,7 +771,6 @@ input {
 
 #classes-desc-row {
   padding: 50px;
-  padding-top: 0px;
   text-align: center;
   padding-bottom: 75px; }
 
@@ -822,6 +836,18 @@ tr:last-child td {
   margin: auto;
   text-align: left; }
 
+.course-descrip span:first-of-type {
+  text-decoration: underline;
+  font-weight: 500;
+  padding-left: 0px; }
+
+.course-descrip span.book {
+  display: inline; }
+
+.course-descrip span {
+  display: block;
+  padding-left: 5em; }
+
 #staff-row {
   padding-top: 75px;
   padding-bottom: 75px; }
@@ -854,7 +880,68 @@ tr:last-child td {
   font-size: 22px;
   text-decoration: underline; }
 
-  #book {
-      text-decoration: underline;
-  }
+.book {
+  display: inline;
+  text-decoration: underline; }
+
+#login-title {
+  padding-left: 0px; }
+
+.login-form .input-group {
+  width: 250px;
+  margin: auto;
+  margin-top: 20px; }
+
+.input-group-btn input[type="submit"] {
+  border-radius: 10px; }
+
+.login-form input {
+  /* max-width:250px; */ }
+
+#contact-form {
+  width: 600px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px; }
+
+.map-container {
+  width: 1000px;
+  margin: auto;
+  margin-top: 85px; }
+
+.panel, .panel-group .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+
+.panel {
+  width: 80%;
+  margin: auto;
+  background-color: inherit; }
+
+.panel .panel-heading {
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-top: 1px solid #b5b5b5;
+  	/*border-left: 1px solid #b5b5b5;
+  	border-right: 1px solid #b5b5b5;
+  */
+  border-bottom: 0px; }
+
+.panel .panel-body {
+  border: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  background: linear-gradient(to bottom, #cecece 0%, #eaedeb 10px);
+  /*box-shadow: 0 1px 2px 0 rgba(11, 58, 132,0.2), 0 1px 2px 0 rgba(11, 58, 132,0.2);
+  */ }
+
 /*# sourceMappingURL=base.css.map */

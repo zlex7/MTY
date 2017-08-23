@@ -71,7 +71,7 @@
                         <div class="dropdown-content">
 
                           <a href="faq.html">FAQ</a>
-                          <a href="contact.html">Contact Us</a>
+                          <a href="contact.html">Contact</a>
                           <a href="retrieve_password.html">Retrieve Password</a>
 
                         </div>
@@ -102,17 +102,86 @@
 
         <div class="row">
 
+          <div class="col-sm-12">
+
+            <div class="map-container">
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.218787493693!2d-97.71366558478587!3d30.34473138177396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca32e15039d9%3A0x8cbaac286e978960!2sMTY+Academy!5e0!3m2!1sen!2sus!4v1503515069056" width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+
+            </div>
+
+          </div>
+
           <div class="col-sm-12 text-center" id="contact-info-row">
 
-            <h1 class="section-title contact-title"> Contact Information </h1>
+            <h1 class="section-title contact-title"> Contact Form </h1>
 
+            <form id="contact-form" method="post" action="contact.php" role="form">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+          <!--
             <div class="contact-info-div">
                 <h4>Address:</h4> 7801 North Lamar Boulevard, Austin, TX 78752 <br>
                 <h4>Phone:</h4> (512) 301-0227 <br>
                 <h4>Alt Phone:</h4> (512) 589-3349, <br>
                 <h4>Email:</h4> schen@mtyacademy.com
             </div>
-
+        -->
             <h1 class="section-title contact-title"> Hours </h1>
 
             <div class="contact-info-div" id="contact-info-div-2">
@@ -155,6 +224,11 @@
 
       </div>
 
+
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="scripts/validator.js"></script>
+      <script src="scripts/contact.js"></script>
 
   </body>
 

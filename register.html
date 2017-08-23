@@ -73,7 +73,7 @@
                         <div class="dropdown-content">
 
                           <a href="faq.html">FAQ</a>
-                          <a href="contact.html">Contact Us</a>
+                          <a href="contact.html">Contact</a>
                           <a href="retrieve_password.html">Retrieve Password</a>
 
                         </div>
@@ -106,7 +106,7 @@
 
       			<div class="col-sm-12 text-center" id="login-row">
 
-              <h1 class="section-title"> Sign Up </h1>
+              <h1 class="section-title"> Sign Up   </h1>
 
               <div class="form-container">
 
@@ -118,32 +118,33 @@
 
                </p>
 
-                <form class="retrieve-password-form" id="register-password-form" action="" method="post">
+               <form class="login-form">
+                 <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                   <input id="username" type="text" class="form-control" name="email" placeholder="Username">
+                 </div>
+                 <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                   <input id="email" type="email" class="form-control" name="email" placeholder="Email">
+                 </div>
+                 <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                   <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                 </div>
+                 <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                   <input id="password" type="password" class="form-control" name="password" placeholder="Confirm Password">
+                 </div>
 
-                  <label for="username">Username: </label>
-                  <input id="username" name="username" type="text" required>
+                 <div class="input-group">
 
-                  <br>
+                  <div class="input-group-btn">
+                    <input type="submit" class="btn btn-success btn-send" value="Submit">
+                  </div>
 
-                  <label for="email">Email: </label>
-                  <input id="email" name="email" type="email" required>
+                 </div>
 
-                  <br>
-
-                  <label for="password">Password: </label>
-                  <input id="password" name="password" type="password" required>
-
-                  <br>
-
-                  <label for="password">Confirm Password: </label>
-                  <input id="password" name="password" type="password" required>
-
-                  <br>
-                  <div id="submit-container-2">
-                  <input id="submit" class="login-submit" type="submit">
-                </div>
-
-                </form>
+               </form>
 
 
             </div>
